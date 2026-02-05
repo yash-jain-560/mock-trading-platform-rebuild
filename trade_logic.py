@@ -29,6 +29,10 @@ def load_portfolio():
             return initial_portfolio
 
 def save_portfolio(portfolio):
+    if os.environ.get('VERCEL') == '1':
+        # Vercel environment is read-only. Prevent write attempts.
+        return 
+        
     path = get_portfolio_path()
     with open(path, 'w') as f:
         json.dump(portfolio, f, indent=4)
