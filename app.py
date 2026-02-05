@@ -104,8 +104,3 @@ def dashboard():
     status = get_portfolio_status()
     raw_portfolio = load_portfolio()
     return render_template_string(HTML_TEMPLATE, status=status, raw_portfolio=raw_portfolio)
-
-if __name__ == '__main__':
-    # Vercel/production environments often use an environmental variable for the port
-    # For local running, we use 5000.
-    app.run(host='0.0.0.0', port=os.environ.get('PORT', 5000))
