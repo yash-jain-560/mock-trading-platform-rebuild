@@ -1,0 +1,25 @@
+{
+    "cash": 6500.00,
+    "holdings": {
+        "MSFT": 5,
+        "GOOG": 10
+    },
+    "transactions": [
+        {
+            "type": "BUY",
+            "ticker": "MSFT",
+            "quantity": 5,
+            "price": 400.00,
+            "cost": 2000.00,
+            "timestamp": "2026-02-05T08:30:00.000000"
+        },
+        {
+            "type": "BUY",
+            "ticker": "GOOG",
+            "quantity": 10,
+            "price": 150.00,
+            "cost": 1500.00,
+            "timestamp": "2026-02-05T08:31:00.000000"
+        }
+    ]
+}
